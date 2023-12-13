@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Inter:wght@600;700&family=Kalnia&family=Poppins:wght@600;700&family=Roboto:wght@300;400;700&family=Young+Serif&display=swap');
+.nav-link {
+    color: white !important;
+}
+html,body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+.new-one {
+    background-image: url('images/23964.jpg');
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+h2 {
+    font-family: 'IM Fell English SC',serif;
+}
+h4 {
+    font-family: 'Kalnia', serif;
+}
+.form-name {
+    font-family: 'Young Serif', serif;
+}
+.form-control {
+    box-shadow: none !important;
+    height: 36px;
+    font-size: 14px;
+}
+.contactForm .form-control {
+    border: none;
+    border-bottom: 1px solid #0F0F0F;
+    padding: 0;
+}
+.form-control:focus, .form-control:active {
+    border-bottom:2px solid #8FA37B !important;
+}
+.btn-primary {
+    background: #7b8d69 !important;
+    border-color: #8FA37B !important;
+}
+.btn-primary:hover {
+    background: #5d6952 !important;
+}
+.con-lef-con {
+    background-color: #8FA37B;
+}
+.form-label {
+    font-family: serif;
+}
+.headings {
+    text-align: center;
+}
