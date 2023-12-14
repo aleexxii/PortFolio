@@ -5,7 +5,7 @@
 html,body {
     height: 100%;
     width: 100%;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 .new-one {
     background-image: url('images/23964.jpg');

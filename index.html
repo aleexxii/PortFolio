@@ -12,10 +12,10 @@
     <!-- bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
 </head>
-<body>
+<body class="position-relative">
   <div class="new-one">
-    <header class="">
-        <div class="row text-white">
+    <header id="Home">
+        <div class="row text-white bg-black w-100 position-fixed z-3" style="margin-left: 1.5px;">
             <!-- Dividing header row into two column -->
             <!-- first Half contain Name -->
             <div class="col-md-6 col-9 py-2 px-4">
@@ -31,19 +31,19 @@
                       <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 m-lg-auto">
                           <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#Home">Home</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="#">Portfolio</a>
+                            <a class="nav-link" href="#Portfolio">Portfolio</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="#About">About</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="#">Skill</a>
+                            <a class="nav-link" href="#Skill">Skill</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="#Contact">Contact</a>
                           </li>
                           </ul>
                       </div>
@@ -75,10 +75,10 @@
     </section>
   </div>
     <!-- Portfolio section end  -->
-    <section class="text-white pb-5" style="background-color: #60794e;">
+    <section class="text-white pb-5" style="background-color: #60794e;" id="Portfolio">
       <div class="container p-0">
-        <div class="row p-3">
-          <h1 class="headings">PortFolio</h1>
+        <div class="row">
+          <h1 class="headings mt-5">PortFolio</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Nam esse iure nemo suscipit vitae nihil possimus facere omnis inventore quis tenetur 
@@ -139,7 +139,7 @@
     </section>
     <!-- Portfolio section end  -->
 <!-- About section stert -->
-<section>
+<section id="About">
   <div class="container shadow mt-3 mb-3 w-75 h-100">
     <div class="row">
       <div class="col-md-4 d-flex flex-column justify-content-center">
@@ -174,7 +174,7 @@
 </section>
 <!-- about section end -->
 <!-- Skill Section Start -->
-<section style="background-color: #aab5a3;">
+<section style="background-color: #aab5a3;" id="Skill">
   <div class="container pt-3 pb-3 text-white">
     <div>
       <h1 class="headings">SKILLS</h1>
@@ -210,7 +210,7 @@
 </section>
 <!-- skill section compleated -->
     <!-- Contact Section Start -->
-    <section>
+    <section id="Contact">
       <h1 class="headings">Contact Us</h1>
       <div class="container mt-5 shadow">
         <div class="row">
@@ -247,26 +247,26 @@
           </div>
           <div class="col-md-8 p-5">
             <h2 class="form-name">Get in touch</h2>
-            <form class="row g-3 mt-4 needs-validation contactForm">
+            <form  class="row g-3 mt-4 needs-validation contactForm">
               <div class="col-md-6">
                 <label for="inputEmail4" class="form-label">First Name</label>
-                <input type="text" class="form-control" id="inputEmail4" required>
+                <input type="text" class="form-control" id="firstName" required>
               </div>
               <div class="col-md-6">
                 <label for="inputPassword4" class="form-label">Last Name</label>
-                <input type="text" class="form-control" id="inputPassword4" required>
+                <input type="text" class="form-control" id="lastName" required>
               </div>
               <div class="col-12">
                 <label for="inputAddress2" class="form-label">Subject</label>
-                <input type="text" class="form-control" id="inputAddress2" required>
+                <input type="text" class="form-control" id="subject" required>
               </div>
               <div class="col-12">
                 <label for="inputAddress" class="form-label">Contact number</label>
-                <input type="tel" class="form-control" id="inputAddress">
+                <input type="tel" class="form-control" id="phone" required>
               </div>
               <div class="col-md-12">
                 <label for="inputCity" class="form-label">Email</label>
-                <input type="email" class="form-control" id="inputCity" required>
+                <input type="email" class="form-control" id="email" required>
               </div>
               <div class="col-md-4">
                 <label for="inputState" class="form-label" required>Country</label>
@@ -306,7 +306,7 @@
                 </select>
               </div>
               <div class="col-12 mt-4">
-                <button type="submit" class="btn btn-primary">Sign in</button>
+                <button type="submit" class="btn btn-primary" id="submit">Sent</button>
               </div>
             </form>
           </div>
@@ -317,5 +317,7 @@
     <!-- Bootstrap js link -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="action.js"></script>
 </body>
 </html>
